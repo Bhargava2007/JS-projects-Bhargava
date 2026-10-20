@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currency Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Currency Converter</h1>
+
+    <form id="form">
+      <label for="amount">Enter amount</label>
+      <input id="amount" type="number" min="0.01" step="any"
+             placeholder="100" required>
+
+      <div class="row">
+        <select id="from">
+          <option value="USD">USD - United States Dollar</option>
+        </select>
+        <b>TO</b>
+        <select id="to">
+          <option value="INR">INR - Indian Rupee</option>
+        </select>
+      </div>
+
+      <button>Convert</button>
+    </form>
+
+    <p id="result"></p>
+    <p id="error"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
