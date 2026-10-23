@@ -1,0 +1,162 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  font-size: 15px;
+}
+
+#search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#taskInput {
+  flex: 2;
+  min-width: 180px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+#addBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#addBtn:hover {
+  background-color: #388e3c;
+}
+
+h2 {
+  color: #3f51b5;
+  margin-top: 30px;
+}
+
+.day {
+  background-color: #e8f5e9;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.day h3 {
+  margin-top: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task span {
+  flex: 1;
+  overflow-wrap: anywhere;
+  color: #0a0000;
+}
+
+.edit {
+  background-color: #ffca28;
+  color: #333;
+}
+
+.edit:hover {
+  background-color: #fbc02d;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #d32f2f;
+}
+
+.empty {
+  background-color: #ffecb3;
+  color: #795548;
+  border: 1px solid #ffcc80;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#error {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ef9a9a;
+  border-radius: 5px;
+}
+
+#closeError {
+  color: #c62828;
+  background: none;
+  font-size: 22px;
+  padding: 0 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .task {
+    flex-wrap: wrap;
+  }
+}
